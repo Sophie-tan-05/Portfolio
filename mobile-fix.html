@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tan Wei Ting - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  </head>
+<body>
+
+  <!-- 1. Animated Background Particles -->
+  <div id="particles-js" style="position:fixed; width:100vw; height:100vh; z-index:0; top:0; left:0;"></div>
+  
+  <!-- 2. Morphing Background Shapes -->
+  <div class="morphing-shapes"></div>
+  
+  <!-- 3. Floating Particles -->
+  <div class="floating-particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+  
+  <!-- 4. Additional Floating Elements -->
+  <div class="floating-elements" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:1;">
+    <div class="floating-animation" style="position:absolute; top:20%; left:5%; width:50px; height:50px; background:rgba(255,182,193,0.1); border-radius:50%;"></div>
+    <div class="floating-animation" style="position:absolute; top:60%; right:8%; width:30px; height:30px; background:rgba(255,182,193,0.15); border-radius:50%;"></div>
+    <div class="floating-animation" style="position:absolute; bottom:30%; left:15%; width:40px; height:40px; background:rgba(255,182,193,0.12); border-radius:50%;"></div>
+  </div>
+  
+  <!-- 5. Dark Mode Only Elements -->
+  <div class="dark-stars">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </div>
+  
+  <div class="matrix-rain" style="display: none;">
+    <div class="matrix-column">01</div>
+    <div class="matrix-column">10</div>
+    <div class="matrix-column">11</div>
+    <div class="matrix-column">00</div>
+    <div class="matrix-column">01</div>
+  </div>
+  
+  <div class="dark-orbs">
+    <div class="dark-orb"></div>
+    <div class="dark-orb"></div>
+    <div class="dark-orb"></div>
+  </div>
+  
+  <div class="scroll-indicator"></div>
+  
+
+
+  <div id="main-content" style="position:relative; z-index:2;">
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <!-- Dark Mode Toggle Button -->
+    <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+
+      <header>
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <main>
+          <!-- HOME Section -->
+      <section id="home" class="pink-slide with-bg" data-aos="fade-up">
+        <!-- Floating/Parallax Decorative Shapes for Home -->
+        <svg width="180" height="180" viewBox="0 0 180 180" style="position:absolute; top:30px; right:30px; opacity:0.18; pointer-events:none; z-index:2;">
+          <circle cx="90" cy="90" r="70" fill="#ffb6c1">
+            <animate attributeName="cy" values="90;140;90;40;90" dur="10s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+        <svg width="180" height="180" viewBox="0 0 180 180" style="position:absolute; bottom:30px; left:30px; opacity:0.18; pointer-events:none; z-index:2;">
+          <circle cx="90" cy="90" r="70" fill="#ffb6c1">
+            <animate attributeName="cx" values="90;140;90;40;90" dur="12s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+        <div class="container slide-box home-card">
+          <div class="profile-image-container glow" data-tilt>
+            <img src="images/profile.jpg" alt="Tan Wei Ting Profile Photo" class="circle-profile" />
+          </div>
+          <div class="glass-box">
+            <h1>Hello! I'm <span id="typewriter" class="highlight" style="white-space: nowrap;"></span></h1>
+            <p>
+              I'm a 20-year-old aspiring web developer with a love for clean design and creative code.
+              I enjoy building user-friendly websites and solving real-world problems through beautiful,
+              responsive interfaces. Welcome to my portfolio!
+            </p>
+          </div>
+        </div>
+      </section>
+
+          <!-- ABOUT ME Section -->
+      <section id="about" class="pink-slide" data-aos="fade-up">
+        <!-- Floating/Parallax Decorative Shapes for About -->
+        <svg width="180" height="180" viewBox="0 0 180 180" style="position:absolute; top:30px; right:30px; opacity:0.18; pointer-events:none; z-index:2;">
+          <circle cx="90" cy="90" r="70" fill="#ffb6c1">
+            <animate attributeName="cy" values="90;140;90;40;90" dur="10s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+        <svg width="180" height="180" viewBox="0 0 180 180" style="position:absolute; bottom:30px; left:30px; opacity:0.18; pointer-events:none; z-index:2;">
+          <circle cx="90" cy="90" r="70" fill="#ffb6c1">
+            <animate attributeName="cx" values="90;140;90;40;90" dur="12s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+        <div class="container slide-box">
+          <h2 class="section-title gradient-text">About Me</h2>
+          <div class="about-content">
+            <p>
+              Hello again! I'm <strong>Tan Wei Ting</strong>, currently studying web development with a passion for front-end design and creativity. I love combining aesthetic design with clean, functional code to build websites that are both beautiful and user-friendly.
+            </p>
+            <p>
+              I'm always eager to learn and grow in this fast-paced tech world. Whether it's working on new projects, solving real-world problems, or simply experimenting with layout and UI ideas, I'm always up for a challenge.
+            </p>
+            <p>
+              Outside of coding, I enjoy design, photography, and exploring new ideas that inspire my creativity.
+            </p>
+          </div>
+        </div>
+      </section>
+
+            <!-- SKILLS -->
+      <section id="skills" class="pink-slide" data-aos="fade-up">
+        <!-- Floating/Parallax Decorative Shapes for Skills -->
+        <svg width="180" height="180" viewBox="0 0 180 180" style="position:absolute; top:30px; right:30px; opacity:0.18; pointer-events:none; z-index:2;">
+          <circle cx="90" cy="90" r="70" fill="#ffb6c1">
+            <animate attributeName="cy" values="90;140;90;40;90" dur="10s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+        <svg width="180" height="180" viewBox="0 0 180 180" style="position:absolute; bottom:30px; left:30px; opacity:0.18; pointer-events:none; z-index:2;">
+          <circle cx="90" cy="90" r="70" fill="#ffb6c1">
+            <animate attributeName="cx" values="90;140;90;40;90" dur="12s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+        <div class="container slide-box">
+          <h2 class="section-title gradient-text">My Skills</h2>
+                  <div class="skills-grid">
+            <div class="skill-card" data-aos="zoom-in">
+              <i class="fab fa-python"></i>
+              <h3>Python</h3>
+              <p>Programming fundamentals, scripting, automation, and data analysis with Python.</p>
+            </div>
+            <div class="skill-card" data-aos="zoom-in">
+              <i class="fab fa-java"></i>
+              <h3>Java</h3>
+              <p>Object-oriented programming, application development, and problem-solving with Java.</p>
+            </div>
+            <div style="flex-basis: 100%; height: 0;"></div>
+            <div class="skill-card" data-aos="zoom-in">
+              <i class="fab fa-html5"></i>
+              <h3>HTML5</h3>
+              <p>Semantic markup, accessibility, and modern HTML features</p>
+            </div>
+            <div class="skill-card" data-aos="zoom-in">
+              <i class="fab fa-css3-alt"></i>
+              <h3>CSS3</h3>
+              <p>Responsive design, animations, Flexbox, and Grid</p>
+            </div>
+            <div class="skill-card" data-aos="zoom-in">
+              <i class="fab fa-js"></i>
+              <h3>JavaScript</h3>
+              <p>DOM manipulation, ES6+ features, and interactive elements</p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+          <!-- CERTIFICATIONS TIMELINE SECTION -->
+      <section id="certifications" class="pink-slide" data-aos="fade-up">
+        <!-- Floating/Parallax Decorative Shapes for Certifications -->
+        <svg width="180" height="180" viewBox="0 0 180 180" style="position:absolute; top:30px; right:30px; opacity:0.18; pointer-events:none; z-index:2;">
+          <circle cx="90" cy="90" r="70" fill="#ffb6c1">
+            <animate attributeName="cy" values="90;140;90;40;90" dur="10s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+        <svg width="180" height="180" viewBox="0 0 180 180" style="position:absolute; bottom:30px; left:30px; opacity:0.18; pointer-events:none; z-index:2;">
+          <circle cx="90" cy="90" r="70" fill="#ffb6c1">
+            <animate attributeName="cx" values="90;140;90;40;90" dur="12s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+        <div class="container slide-box">
+          <h2 class="section-title gradient-text">My Certifications</h2>
+          <div class="timeline-container">
+            <!-- Certification 1 -->
+            <div class="timeline-item" data-aos="fade-right">
+              <div class="timeline-content">
+                <div class="cert-badge">
+                  <i class="fab fa-java"></i>
+                </div>
+                <span class="cert-date">2023</span>
+                <h3 class="cert-title">Java Programming</h3>
+                <span class="cert-org">Sunway College<img src="images/Sunway_College.png" alt="Sunway College Logo" class="school-logo"></span>
+                <p>Learnt Java programming fundamentals and problem-solving during my Foundation in Science & Technology at Sunway College.</p>
+              </div>
+            </div>
+            <!-- Certification 2 -->
+            <div class="timeline-item" data-aos="fade-left">
+              <div class="timeline-content">
+                <div class="cert-badge">
+                  <i class="fab fa-python"></i>
+                </div>
+                <span class="cert-date">2023</span>
+                <h3 class="cert-title">Python Programming</h3>
+                <span class="cert-org">Sunway University <img src="images/Sunway_University.png" alt="Sunway University Logo" class="school-logo"></span>
+                <p>Developed proficiency in Python programming, scripting, and data analysis during my studies at Sunway University.</p>
+              </div>
+            </div>
+            <!-- Certification 3 -->
+            <div class="timeline-item" data-aos="fade-right">
+              <div class="timeline-content">
+                <div class="cert-badge">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <span class="cert-date">2024</span>
+                <h3 class="cert-title">HTML5</h3>
+                <span class="cert-org">Sunway University <img src="images/Sunway_University.png" alt="Sunway University Logo" class="school-logo"></span>
+                <p>Gained practical experience in semantic HTML, accessibility, and building the structure of modern web pages at Sunway University.</p>
+              </div>
+            </div>
+            <!-- Certification 4 -->
+            <div class="timeline-item" data-aos="fade-left">
+              <div class="timeline-content">
+                <div class="cert-badge">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <span class="cert-date">2024</span>
+                <h3 class="cert-title">CSS3</h3>
+                <span class="cert-org">Sunway University <img src="images/Sunway_University.png" alt="Sunway University Logo" class="school-logo"></span>
+                <p>Learned responsive design, Flexbox, Grid, and advanced styling techniques for modern web development at Sunway University.</p>
+              </div>
+            </div>
+            <!-- Certification 5 -->
+            <div class="timeline-item" data-aos="fade-right">
+              <div class="timeline-content">
+                <div class="cert-badge">
+                  <i class="fab fa-js"></i>
+                </div>
+                <span class="cert-date">2023</span>
+                <h3 class="cert-title">JavaScript</h3>
+                <span class="cert-org">Sunway University <img src="images/Sunway_University.png" alt="Sunway University Logo" class="school-logo"></span>
+                <p>Developed interactive web features and dynamic content using JavaScript, including ES6+ features, at Sunway University.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <!-- PROJECTS -->
+      <section id="projects" class="pink-slide" data-aos="fade-up">
+        <!-- Floating/Parallax Decorative Shapes for Projects -->
+        <svg width="180" height="180" viewBox="0 0 180 180" style="position:absolute; top:30px; right:30px; opacity:0.18; pointer-events:none; z-index:2;">
+          <circle cx="90" cy="90" r="70" fill="#ffb6c1">
+            <animate attributeName="cy" values="90;140;90;40;90" dur="10s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+        <svg width="180" height="180" viewBox="0 0 180 180" style="position:absolute; bottom:30px; left:30px; opacity:0.18; pointer-events:none; z-index:2;">
+          <circle cx="90" cy="90" r="70" fill="#ffb6c1">
+            <animate attributeName="cx" values="90;140;90;40;90" dur="12s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+        <div class="container slide-box">
+          <h2 class="section-title gradient-text">My Projects</h2>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card" data-tilt data-aos="zoom-in-up">
+              <img src="images/Fitblix_Cover.png" alt="Fitness App Screenshot" />
+              <div class="project-info">
+                <h3>Fitness App (Fitblix)</h3>
+                <p>A modern fitness tracking app designed to help users set, track, and achieve their health goals. Fitblix features personalized workout plans, progress analytics, and a vibrant community for motivation. Built with a focus on usability and engagement.<br><br>
+                <strong>Prepared by:</strong> Brandon Lee Cheng Yi, Damien Yee Jin Yang, Tan Wei Ting & Tan Wen Xi</p>
+                <div class="project-links">
+                  <a href="images/FitblixNew.pdf" class="project-link" download>
+                    <i class="fas fa-file-download"></i> Report
+                  </a>
+                  <a href="https://drive.google.com/file/d/1op9Za-V8vZudHn0LCvvcSmRjgh95IYO7/view" class="project-link" target="_blank">
+                    <i class="fas fa-video"></i> Video
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card" data-tilt data-aos="zoom-in-up">
+              <img src="images/Inventory_Cover.png" alt="Inventory Management System Screenshot" />
+              <div class="project-info">
+                <h3>Inventory Management System</h3>
+                <p>A Python-based inventory management system designed to help businesses efficiently track stock levels, manage product information, and generate insightful reports. The system features a user-friendly interface, real-time updates, and robust data handling.<br><br>
+                <strong>Created by:</strong> Tan Wei Ting, Tiffany, Wen Xi, En Yi, and Yi Xuan</p>
+                <div class="project-links">
+                  <a href="images/Programming Principle Assignment.pdf" class="project-link" download>
+                    <i class="fas fa-file-download"></i> Report
+                  </a>
+                  <a href="https://youtu.be/tXFvey_J4oY?si=4e49rUemcJ5Jy9Ub" class="project-link" target="_blank">
+                    <i class="fab fa-youtube"></i> YouTube
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card" data-tilt data-aos="zoom-in-up">
+              <img src="images/Oracle_apex.jpg" alt="Animal Shelter Screenshot" />
+              <div class="project-info">
+                <h3>Animal Shelter Database</h3>
+                <p>A database system project developed using Oracle APEX to manage information for a fictional animal shelter. The system includes features such as animal records management, adoption tracking, and volunteer scheduling.<br><br>
+                <strong>Created by:</strong> Tan Wei Ting, Tiffany, Wen Xi, Angelyn, Jia Hui & Rachel</p>
+                <div class="project-links">
+                  <a href="https://github.com/Sophie-tan-05/Animal-Shelter-Database" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                  <a href="images/AnimalShelterDatabaseReport.pdf" class="project-link" target="_blank">
+                    <i class="fas fa-file-download"></i> Report
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project-card" data-tilt data-aos="zoom-in-up">
+              <img src="images/Pokemon.png" alt="Pokemon Screenshot" />
+              <div class="project-info">
+                <h3>Pokémon Ga-Olé Simulation System</h3>
+                <p>A simulation of the Pokémon Ga-Olé arcade game developed in Java, applying core object-oriented programming principles such as encapsulation, inheritance, abstraction, and polymorphism. The system models Pokémon, player data, battles, and disk collections using well-structured Java classes and interactions. It provides a text-based or GUI interface to simulate battles, display Pokémon stats, and manage collections, offering a modular and maintainable codebase.<br><br>
+                  <strong>Created by:</strong> Tan Wei Ting, Tiffany, Wen Xi, En Yi, Yi Xuan & Audrey</p>
+                <div class="project-links">
+                  <a href="https://github.com/Sophie-tan-05/Pokemon-Ga-Ole-Game" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> Code
+                  </a>
+                  <a href="images/Phie Programming Report.pdf" class="project-link" target="_blank">
+                    <i class="fas fa-file-download"></i> Report
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card" data-tilt data-aos="zoom-in-up">
+              <img src="images/Website.png" alt="Website Screenshot" />
+              <div class="project-info">
+                <h3>Travel Agenct Website</h3>
+                <p>A responsive Travel Agency website developed collaboratively using HTML, CSS, and JavaScript. The project showcases key web development concepts such as responsive layout design, interactive UI components, and modular code structure. It features destination highlights, tour package listings, and a functional contact form with client-side validation. JavaScript enhances the user experience through image sliders, menu toggling, and dynamic content filtering, providing a smooth and engaging browsing experience.<br><br></p>
+                <strong>Created by:</strong> Tan Wei Ting, Tiffany, Wen Xi, En Yi and Yi Xuan</p>
+                <div class="project-links">
+                  <a href="https://6886907549cd86741f050bb7--jolly-beignet-b9e3de.netlify.app" class="project-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Website
+                  </a>
+                  <a href="images/HopNTrip Report.pdf" class="project-link" target="_blank">
+                    <i class="fas fa-file-download"></i> Report
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="pink-slide" data-aos="fade-up">
+      <!-- Floating/Parallax Decorative Shapes for Contact -->
+      <svg width="180" height="180" viewBox="0 0 180 180" style="position:absolute; top:30px; right:30px; opacity:0.18; pointer-events:none; z-index:2;">
+        <circle cx="90" cy="90" r="70" fill="#ffb6c1">
+          <animate attributeName="cy" values="90;140;90;40;90" dur="10s" repeatCount="indefinite" />
+        </circle>
+      </svg>
+      <svg width="180" height="180" viewBox="0 0 180 180" style="position:absolute; bottom:30px; left:30px; opacity:0.18; pointer-events:none; z-index:2;">
+        <circle cx="90" cy="90" r="70" fill="#ffb6c1">
+          <animate attributeName="cx" values="90;140;90;40;90" dur="12s" repeatCount="indefinite" />
+        </circle>
+      </svg>
+      <div class="container slide-box contact-container">
+        <h2 class="section-title gradient-text">Contact Me</h2>
+        <div class="form-box">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn liquid-button">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3>Find Me Online</h3>
+          <div class="social-icons">
+            <a href="mailto:sophietan536@gmail.com"><i class="fas fa-envelope"></i> sophietan536@gmail.com</a>
+            <a href="https://www.instagram.com/weiii_ting_05/"><i class="fab fa-instagram"></i> @weiii_ting_05</a>
+            <a href="https://github.com/Sophie-tan-05"><i class="fab fa-github"></i> github.com/Sophie-tan-05</a>
+            <a href="#"><i class="fab fa-linkedin"></i> Tan Wei Ting</a>
+          </div>
+          <div class="contact-illustration" style="margin-top: 30px;">
+            <div style="background: var(--light-pink); border-radius: 50%; width: 150px; height: 150px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+              <i class="fas fa-paper-plane" style="font-size: 3rem; color: var(--primary-pink); animation: float 2s ease-in-out infinite;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-wave">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          </svg>
+        </div>
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <i class="fas fa-code"></i>
+              Tan<span>WeiTing</span>
+            </div>
+            <div class="footer-about">
+              <p>Aspiring web developer passionate about creating beautiful, functional websites with a focus on user experience and clean code.</p>
+            </div>
+            <div class="footer-social">
+              <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+              <li><a href="#about"><i class="fas fa-chevron-right"></i> About Me</a></li>
+              <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+              <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+              <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">Contact Info</h3>
+            <ul class="footer-links">
+              <li><a href="mailto:sophietan536@gmail.com"><i class="fas fa-envelope"></i> sophietan536@gmail.com</a></li>
+              <li><a href="https://www.instagram.com/weiii_ting_05/"><i class="fab fa-instagram"></i> @weiii_ting_05</a></li>
+              <li><a href="https://github.com/Sophie-tan-05"><i class="fab fa-github"></i> github.com/Sophie-tan-05</a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i> Tan Wei Ting</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">Newsletter</h3>
+            <p>Subscribe for updates on my latest projects and web development insights.</p>
+            <form class="newsletter-form">
+              <input type="email" class="newsletter-input" placeholder="Your email address" required>
+              <button type="submit" class="newsletter-btn">
+                <i class="fas fa-paper-plane"></i> Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Tan Wei Ting. All Rights Reserved. Designed with <span class="heart">❤</span> and CSS</p>
+        </div>
+      </footer>
+
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.3/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="myscript.js"></script>
+    
+  </div>
+<!-- Code injecte
